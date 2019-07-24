@@ -17,6 +17,10 @@ name = "tcp_rw"
 path = "src/examples/tcp_rw.rs"
 
 [[example]]
+name = "tcp_rw_frame"
+path = "src/examples/tcp_rw_frame.rs"
+
+[[example]]
 name = "tcp_length"
 path = "src/examples/tcp_length.rs"
 
