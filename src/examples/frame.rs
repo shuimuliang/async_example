@@ -3,7 +3,6 @@ use futures::{
     future::Future,
     io::{AsyncRead, AsyncReadExt, AsyncWrite, AsyncWriteExt},
 };
-use std::{convert::TryInto, io::Result};
 
 pub async fn read_u16frame<TSocket>(mut sock:TSocket) -> Vec<u8> 
 where
