@@ -1,0 +1,66 @@
+[package]
+name = "demo_async"
+version = "0.1.0"
+authors = ["fanngyuan <fanngyuan@gmail.com>"]
+edition = "2018"
+
+[[example]]
+name = "http"
+path = "src/examples/http.rs"
+
+[[example]]
+name = "tcp"
+path = "src/examples/tcp.rs"
+
+[[example]]
+name = "tcp_rw"
+path = "src/examples/tcp_rw.rs"
+
+[[example]]
+name = "tcp_select"
+path = "src/examples/tcp_select.rs"
+
+[[example]]
+name = "delay"
+path = "src/examples/delay.rs"
+
+[[example]]
+name = "interval"
+path = "src/examples/interval.rs"
+
+[[example]]
+name = "select"
+path = "src/examples/select.rs"
+
+[[example]]
+name = "async_reader"
+path = "src/examples/async_reader.rs"
+
+[[example]]
+name = "sink"
+path = "src/examples/sink.rs"
+
+[[example]]
+name = "async_writer"
+path = "src/examples/async_writer.rs"
+
+[[example]]
+name = "join"
+path = "src/examples/join.rs"
+
+[dependencies]
+bytes = "0.4.12"
+futures = { version = "=0.3.0-alpha.16", package = "futures-preview", features = ["async-await", "nightly", "io-compat", "compat"] }
+futures_01 = { version = "0.1.25", package = "futures" }
+parity-multiaddr = "0.4.0"
+structopt = "0.2.15"
+tokio = {version="0.1.16"}
+unsigned-varint = { version = "0.2.2", features = ["codec"] }
+toml = "0.4.5"
+base64 = "0.10.1"
+sha2 = "0.8.0"
+hex = "0.3.2"
+serde_derive = "1.0.94"
+serde = "1.0.94"
+serde_json = "1.0.39"
+hyper = "0.12.31"
