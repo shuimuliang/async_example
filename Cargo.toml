@@ -29,6 +29,10 @@ name = "tcp_select"
 path = "src/examples/tcp_select.rs"
 
 [[example]]
+name = "tcp_fuse"
+path = "src/examples/tcp_fuse.rs"
+
+[[example]]
 name = "delay"
 path = "src/examples/delay.rs"
 
