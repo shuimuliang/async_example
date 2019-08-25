@@ -60,9 +60,17 @@ path = "src/examples/async_writer.rs"
 name = "join"
 path = "src/examples/join.rs"
 
+[[example]]
+name = "chat_server"
+path = "src/examples/chat_server.rs"
+
+[[example]]
+name = "chat_client"
+path = "src/examples/chat_client.rs"
+
 [dependencies]
 bytes = "0.4.12"
-futures = { version = "=0.3.0-alpha.16", package = "futures-preview", features = ["async-await", "nightly", "io-compat", "compat"] }
+futures = { version = "=0.3.0-alpha.17", package = "futures-preview", features = ["async-await", "nightly", "io-compat", "compat"] }
 futures_01 = { version = "0.1.25", package = "futures" }
 parity-multiaddr = "0.4.0"
 structopt = "0.2.15"
@@ -76,3 +84,4 @@ serde_derive = "1.0.94"
 serde = "1.0.94"
 serde_json = "1.0.39"
 hyper = "0.12.31"
+async-std = "0.99"
