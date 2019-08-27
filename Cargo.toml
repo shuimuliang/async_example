@@ -33,6 +33,18 @@ name = "tcp_fuse"
 path = "src/examples/tcp_fuse.rs"
 
 [[example]]
+name = "tcp_async"
+path = "src/examples/tcp_async.rs"
+
+[[example]]
+name = "tcp_async_split"
+path = "src/examples/tcp_async_split.rs"
+
+[[example]]
+name = "tcp_async_simple"
+path = "src/examples/tcp_async_simple.rs"
+
+[[example]]
 name = "delay"
 path = "src/examples/delay.rs"
 
