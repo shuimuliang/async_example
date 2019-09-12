@@ -80,10 +80,16 @@ path = "src/examples/chat_server.rs"
 name = "chat_client"
 path = "src/examples/chat_client.rs"
 
+[[example]]
+name = "lock"
+path = "src/examples/lock.rs"
+
+
 [dependencies]
 bytes = "0.4.12"
 futures = { version = "=0.3.0-alpha.17", package = "futures-preview", features = ["async-await", "nightly", "io-compat", "compat"] }
 futures_01 = { version = "0.1.25", package = "futures" }
+futures_locks = { version = "=0.3.0", package = "futures-locks", features=["tokio"]}
 parity-multiaddr = "0.4.0"
 structopt = "0.2.15"
 tokio = {version="0.1.16"}
